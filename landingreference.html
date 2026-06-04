@@ -1,0 +1,517 @@
+```html
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Creatricks 2026 | School Design Expo</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+<style>
+
+body{
+background:#000;
+color:white;
+font-family:'Hanken Grotesk',sans-serif;
+overflow-x:hidden;
+}
+
+.hero-overlay{
+background:linear-gradient(to bottom,rgba(0,0,0,.45),rgba(0,0,0,.88));
+}
+
+.card-hover{
+transition:.5s ease;
+}
+
+.card-hover:hover{
+transform:translateY(-8px);
+border-color:#f2ca50;
+}
+
+.fade-page{
+animation:fade .5s ease;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.us-project-wrapper{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+.us-project-wrapper div{
+width:100% !important;
+height:100% !important;
+}
+
+.text-primary{
+color:#f2ca50;
+}
+
+.bg-primary{
+background:#f2ca50;
+}
+
+.count-number{
+transition:transform .35s ease, opacity .35s ease;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="fixed top-0 left-0 w-full z-50 border-b border-[#222] bg-black/60 backdrop-blur-xl">
+
+<div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+
+<div class="text-primary text-2xl font-bold tracking-[0.3em] uppercase">
+Creatricks 2026
+</div>
+
+<nav class="hidden md:flex gap-10 uppercase text-sm tracking-[0.2em]">
+
+<a href="#" class="text-primary">
+Expo
+</a>
+
+<a href="#events" class="hover:text-primary transition">
+Competitions
+</a>
+
+<a href="#" class="hover:text-primary transition">
+Schedule
+</a>
+
+<a href="#" class="hover:text-primary transition">
+Archives
+</a>
+
+</nav>
+
+<button class="bg-primary text-black px-8 py-3 uppercase tracking-[0.2em] text-sm hover:bg-white transition">
+Register
+</button>
+
+</div>
+</header>
+
+<!-- LANDING PAGE -->
+
+<div id="landingPage" class="fade-page">
+
+<!-- HERO SECTION -->
+
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden text-center px-8">
+
+<div class="us-project-wrapper z-0">
+<div data-us-project="5JfKpgnWQNSVX5B3kezx"></div>
+</div>
+
+<div class="absolute inset-0 hero-overlay z-0"></div>
+
+<div class="relative z-10 max-w-5xl mx-auto">
+
+<div class="uppercase tracking-[0.5em] text-sm text-gray-400 mb-8">
+Presenting
+</div>
+
+<h1 class="font-serif text-6xl md:text-8xl leading-tight mb-10">
+
+<span class="block text-primary uppercase">
+Creatricks 2026
+</span>
+
+Where Academic Rigor Meets
+
+<span class="italic text-white">
+Pure Imagination
+</span>
+
+</h1>
+
+<p class="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-14">
+Join us for the premier school design expo.
+</p>
+
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+
+<button class="bg-primary text-black px-12 py-5 uppercase tracking-[0.2em] hover:bg-white transition">
+Explore Gallery
+</button>
+
+<button class="border border-white/20 px-12 py-5 uppercase tracking-[0.2em] hover:border-[#f2ca50] hover:text-[#f2ca50] transition">
+View Schedule
+</button>
+
+</div>
+
+</div>
+</section>
+
+<!-- COUNTDOWN SECTION -->
+
+<section class="py-24 px-8 bg-black border-t border-[#111] border-b border-[#111]">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<div class="uppercase tracking-[0.45em] text-sm text-gray-500 mb-6">
+Countdown To The Expo
+</div>
+
+<h2 class="font-serif text-5xl md:text-7xl text-primary mb-14">
+24 July 2026
+</h2>
+
+<div id="countdown" class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+
+<div class="border border-[#222] bg-[#0a0a0a] p-10">
+
+<div id="days" class="count-number font-serif text-6xl md:text-7xl text-primary mb-3">
+00
+</div>
+
+<div class="uppercase tracking-[0.3em] text-xs text-gray-500">
+Days
+</div>
+
+</div>
+
+<div class="border border-[#222] bg-[#0a0a0a] p-10">
+
+<div id="hours" class="count-number font-serif text-6xl md:text-7xl text-primary mb-3">
+00
+</div>
+
+<div class="uppercase tracking-[0.3em] text-xs text-gray-500">
+Hours
+</div>
+
+</div>
+
+<div class="border border-[#222] bg-[#0a0a0a] p-10">
+
+<div id="minutes" class="count-number font-serif text-6xl md:text-7xl text-primary mb-3">
+00
+</div>
+
+<div class="uppercase tracking-[0.3em] text-xs text-gray-500">
+Minutes
+</div>
+
+</div>
+
+<div class="border border-[#222] bg-[#0a0a0a] p-10">
+
+<div id="seconds" class="count-number font-serif text-6xl md:text-7xl text-primary mb-3">
+00
+</div>
+
+<div class="uppercase tracking-[0.3em] text-xs text-gray-500">
+Seconds
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- EVENT 1 -->
+
+<a href="comp1.html" class="card-hover cursor-pointer border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
+
+<div class="absolute inset-0 z-0">
+
+<div class="us-project-wrapper">
+<div data-us-project="YH5OQNivB3ZHMz1lBPpQ"></div>
+</a>
+
+<div class="absolute inset-0 bg-black/70"></div>
+
+</div>
+
+<div class="relative z-10 h-full flex flex-col justify-end p-10">
+
+<div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+Fashion Styling
+</div>
+
+<h3 class="font-serif text-5xl leading-none mb-5">
+Luminara
+</h3>
+
+<p class="text-gray-300 text-lg leading-relaxed">
+
+</p>
+
+</div>
+</div>
+```
+
+
+
+<!-- EVENT 2 -->
+
+<a href="comp2.html" class="card-hover cursor-pointer border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
+
+<div class="absolute inset-0 z-0">
+
+<div class="us-project-wrapper">
+<div data-us-project="lZyPCGIVwUiv2aK2yWsr"></div>
+</a>
+
+<div class="absolute inset-0 bg-black/70"></div>
+
+</div>
+
+<div class="relative z-10 h-full flex flex-col justify-end p-10">
+
+<div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+Product Design
+</div>
+
+<h3 class="font-serif text-5xl leading-none mb-5">
+Morphis
+</h3>
+
+<p class="text-gray-300 text-lg leading-relaxed">
+
+</p>
+
+</div>
+</div>
+
+
+<!-- EVENT 3 -->
+
+<a href="comp3.html" class="card-hover cursor-pointer border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
+
+<div class="absolute inset-0 z-0">
+
+<div class="us-project-wrapper">
+<div data-us-project="LdIuPPi57Gs6ZB0EjyT5"></div>
+</a>
+
+<div class="absolute inset-0 bg-black/70"></div>
+
+</div>
+
+<div class="relative z-10 h-full flex flex-col justify-end p-10">
+
+<div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+Painting
+</div>
+
+<h3 class="font-serif text-5xl leading-none mb-5">
+Huenova
+</h3>
+
+<p class="text-gray-300 text-lg leading-relaxed">
+</p>
+
+</div>
+</div>
+
+<!-- EVENT 4 -->
+
+<a href="comp4.html" class="card-hover cursor-pointer border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
+
+<div class="absolute inset-0 z-0">
+
+<div class="us-project-wrapper">
+<div data-us-project="K0K6wgcAiHBKcSztHiRg"></div>
+</a>
+
+<div class="absolute inset-0 bg-black/70"></div>
+
+</div>
+
+<div class="relative z-10 h-full flex flex-col justify-end p-10">
+
+<div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+Quiz
+</div>
+
+<h3 class="font-serif text-5xl leading-none mb-5">
+Envirospark
+</h3>
+
+<p class="text-gray-300 text-lg leading-relaxed">
+
+</p>
+
+</div>
+</div>
+
+<!-- Event details removed: replaced card navigation uses direct links to competition pages -->
+
+<!-- FOOTER -->
+
+<div class="max-w-7xl mx-auto flex justify-between items-center flex-col md:flex-row gap-10">
+
+<div>
+
+<div class="font-serif text-3xl text-primary uppercase tracking-[0.3em] mb-4">
+Creatricks 2026
+</div>
+
+<p class="text-gray-500">
+Celebrating creative imagination.
+</p>
+
+</div>
+
+<div class="text-gray-600 uppercase tracking-[0.2em] text-sm">
+© 2026 Creatricks Expo
+</div>
+
+</div>
+</footer>
+
+<!-- Event script removed: navigation handled via direct links to competition pages -->
+
+<!-- COUNTDOWN SCRIPT -->
+
+<script>
+
+const targetDate = new Date("July 24, 2026 00:00:00").getTime();
+
+let previousValues = {
+days:null,
+hours:null,
+minutes:null,
+seconds:null
+};
+
+function animateValue(id,newValue){
+
+const el = document.getElementById(id);
+
+if(el.innerText === String(newValue).padStart(2,'0')){
+return;
+}
+
+el.style.transform = "translateY(12px)";
+el.style.opacity = "0";
+
+setTimeout(()=>{
+
+el.innerText = String(newValue).padStart(2,'0');
+
+el.style.transform = "translateY(0px)";
+el.style.opacity = "1";
+
+},180);
+
+}
+
+function updateCountdown(){
+
+const now = new Date().getTime();
+
+const distance = targetDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours = Math.floor(
+(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+);
+
+const minutes = Math.floor(
+(distance % (1000 * 60 * 60)) / (1000 * 60)
+);
+
+const seconds = Math.floor(
+(distance % (1000 * 60)) / 1000
+);
+
+if(previousValues.days !== days){
+animateValue("days",days);
+previousValues.days = days;
+}
+
+if(previousValues.hours !== hours){
+animateValue("hours",hours);
+previousValues.hours = hours;
+}
+
+if(previousValues.minutes !== minutes){
+animateValue("minutes",minutes);
+previousValues.minutes = minutes;
+}
+
+if(previousValues.seconds !== seconds){
+animateValue("seconds",seconds);
+previousValues.seconds = seconds;
+}
+
+if(distance < 0){
+
+document.getElementById("countdown").innerHTML = `
+<div class="col-span-full text-center">
+<h2 class="font-serif text-6xl text-primary">
+Creatricks 2026 Has Begun
+</h2>
+</div>
+`;
+
+}
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+</script>
+
+<!-- UNICORN STUDIO -->
+
+<script type="text/javascript">
+!function(){
+var u=window.UnicornStudio;
+if(u&&u.init){
+if(document.readyState==="loading"){
+document.addEventListener("DOMContentLoaded",function(){u.init()})
+}else{
+u.init()
+}
+}else{
+window.UnicornStudio={isInitialized:!1};
+var i=document.createElement("script");
+i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.12/dist/unicornStudio.umd.js",
+i.onload=function(){
+if(document.readyState==="loading"){
+document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})
+}else{
+UnicornStudio.init()
+}
+},
+(document.head||document.body).appendChild(i)
+}}();
+</script>
+
+</body>
+</html>
+```

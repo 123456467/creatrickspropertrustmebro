@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Creatricks 2026 | Expo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#ffe08a",
+                    "on-surface-variant": "#a8a8a8",
+                    "secondary-fixed": "#ffe088",
+                    "inverse-surface": "#e2e2e2",
+                    "inverse-on-surface": "#303030",
+                    "surface-container": "#1f1f1f",
+                    "surface-container-low": "#050505",
+                    "on-primary-container": "#6b5500",
+                    "on-primary-fixed": "#241a00",
+                    "primary-fixed-dim": "#eac249",
+                    "on-secondary-fixed": "#241a00",
+                    "on-tertiary-container": "#575858",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary": "#3d2f00",
+                    "on-surface": "#ffffff",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "outline-variant": "#222222",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-secondary-container": "#342800",
+                    "tertiary": "#ebeaea",
+                    "surface-bright": "#393939",
+                    "secondary-fixed-dim": "#e9c349",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary": "#ffe9b0",
+                    "outline": "#333333",
+                    "primary-container": "#f2ca50",
+                    "surface-variant": "#353535",
+                    "on-background": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "background": "#131313",
+                    "tertiary-fixed": "#e3e2e2",
+                    "on-secondary": "#3c2f00",
+                    "inverse-primary": "#745b00",
+                    "on-primary-fixed-variant": "#574400",
+                    "surface-tint": "#eac249",
+                    "on-tertiary": "#2f3131",
+                    "secondary-container": "#af8d11",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary": "#e9c349",
+                    "surface-dim": "#131313",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "surface-container-highest": "#353535",
+                    "surface": "#000000",
+                    "error": "#ffb4ab",
+                    "tertiary-container": "#cecece"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "touch-target-min": "48px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Times New Roman"],
+                    "label-caps": ["Times New Roman"],
+                    "headline-sm": ["Abril Fatface"],
+                    "headline-lg": ["Abril Fatface"],
+                    "label-mono": ["Times New Roman"],
+                    "headline-lg-mobile": ["Abril Fatface"],
+                    "display-lg": ["Abril Fatface"],
+                    "headline-md": ["Abril Fatface"],
+                    "body-md": ["Times New Roman"],
+                    "times": ["Times New Roman"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "12px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-mono": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["60px", {"lineHeight": "66px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "42px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+        .rim-light-top {
+            box-shadow: inset 0 1px 0 0 rgba(242, 202, 80, 0.15);
+        }
+        .glow-gold {
+            filter: drop-shadow(0 0 15px rgba(242, 202, 80, 0.3));
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .snap-container {
+            scroll-snap-type: y mandatory;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+        .snap-section {
+            scroll-snap-align: start;
+            height: 100vh;
+            padding-top: 64px; /* Space for TopAppBar */
+            padding-bottom: 80px; /* Space for BottomNavBar */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-touch-target-min bg-surface border-b border-outline-variant flat no shadows">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary scale-95 duration-150 active:scale-95" data-icon="menu">menu</span>
+<span class="font-display-lg text-headline-sm dark:text-primary tracking-tighter">Creatricks</span>
+</div>
+<button class="font-body-md text-body-md text-primary font-bold hover:text-primary transition-colors active:scale-95 duration-150">Register</button>
+</header>
+<main class="snap-container">
+<!-- Hero Section -->
+<section class="snap-section relative flex flex-col justify-center px-margin-mobile overflow-hidden">
+<div class="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(242,202,80,0.08)_0%,_rgba(0,0,0,1)_70%)]"></div>
+<div class="relative z-10 flex flex-col items-start gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 border border-primary/30 bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[14px]" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-caps text-label-caps text-primary uppercase">2026 Edition</span>
+</div>
+<h1 class="font-display-lg text-headline-lg-mobile text-white leading-tight">
+                    Where Academic Rigor Meets <br/><span class="text-primary italic">Pure Imagination</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[80%] leading-relaxed mt-2">
+                    The premier design expo. A showcase of architectural wonder and interactive speculative futures.
+                </p>
+<div class="flex gap-4 mt-8 w-full">
+<button class="flex-1 h-touch-target-min bg-primary-container text-on-primary font-label-caps text-label-caps tracking-widest active:scale-95 transition-transform">
+                        EXPLORE GALLERY
+                    </button>
+<a href="schedule_mobile.html" class="flex-1 h-touch-target-min border border-outline-variant text-on-surface font-label-caps text-label-caps tracking-widest active:scale-95 transition-transform flex items-center justify-center">
+                        SCHEDULE
+                    </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-24 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+<span class="material-symbols-outlined" data-icon="keyboard_double_arrow_down">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Bento Grid: Competitions -->
+<section class="snap-section px-margin-mobile flex flex-col justify-center gap-6" id="competitions">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-2">
+<h2 class="font-headline-sm text-headline-sm text-primary">Competitions</h2>
+<span class="font-label-mono text-label-mono text-on-surface-variant">04 TRACKS</span>
+</div>
+<div class="grid grid-cols-2 grid-rows-3 gap-3 h-[530px]">
+<!-- Urban Alchemy -->
+<a href="comp1_mobile.html" class="col-span-2 row-span-1 border border-outline-variant p-4 flex flex-col justify-end relative group overflow-hidden bg-surface-container-low rim-light-top">
+<div class="absolute inset-0 opacity-40 group-active:scale-105 transition-transform duration-500 bg-cover bg-center" data-alt="An abstract architectural shot showing modular concrete structures and gold metallic pipes intersecting. High-contrast nocturnal lighting with sharp highlights on the gold elements. Minimalist gallery aesthetic with deep black shadows and a sense of industrial alchemy." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRBTG3SgXK9VA14QA6RgGRF-aLMkfUdrqHOnDSBKUWTzLcrVWhrF1JVgqkZ8k_JRL8ETgezoCXUQ_jqsgzOTg8KgcWOVpg_gOD0WrurgI3Ky1PiRBYyr5ZRf_mT3rV6oNRh5UWmNvYR_HTTZjCO7qVzvLa2bYkpRxnLPbf9CV4x14ZDEFhkLtkrQ8LQqnV1igjgD-q_djbgnUDRLe0GpXhA3VxF0gWklOvsF7VPdvuQdGjI6iqUk9K_xxwbrk2vd9zLJ_amjghoC1x')"></div>
+<div class="relative z-10">
+<span class="font-label-mono text-label-mono text-primary mb-1 block">FASHION</span>
+<h3 class="font-headline-sm text-[20px] text-white">Luminara</h3>
+</div>
+</a>
+<!-- Paper Citadels -->
+<a href="comp2_mobile.html" class="col-span-1 row-span-1 border border-outline-variant p-4 flex flex-col justify-end relative bg-surface-container-low rim-light-top">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Delicate geometric origami structures made of crisp white paper, illuminated by a warm gold spotlight in a dark, prestigious room. The composition emphasizes the fragility and structural integrity of the paper folds against an absolute black background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDW5zmB6uPCj5fThmsrvwugSpqFyBUgy9x151NeRO0L0mkhHwBMkEXL2uA2eIw1GIVEX6ehPgovXykbI_PqAapUEMkWrNGFtpl6I8FM87veMdhoc_V1OQgIcUn2Guz6DKGn3XTVizmrWSeN7ViiyfWrlPzbDDAFH3UeFTgI20rl6f2rh2e74--4AvVpWSVFi6YOcWQgxazaAwww50C8vM5ae3qkQV2mJtYiDYUfFL0qgOGUkdQva0_3QvcffltC6X1zlppQd_zQmz7v')"></div>
+<div class="relative z-10">
+<span class="font-label-mono text-label-mono text-primary mb-1 block">Sketching</span>
+<h3 class="font-headline-sm text-[18px] text-white leading-tight">Hue<br/>Nova</h3>
+</div>
+</a>
+<!-- Digital Folklore -->
+<a href="comp3_mobile.html" class="col-span-1 row-span-1 border border-outline-variant p-4 flex flex-col justify-end relative bg-surface-container-low rim-light-top">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="A glowing holographic interface displaying traditional folk patterns in radiant gold light. The digital elements float in a dark room with a soft atmospheric glow. The style is a mix of high-tech projection and ancient storytelling aesthetics." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSROoxnGe2VoGSicZHm2UL7E1Qn-ozGsWpWCJxgsrwLj4TVdX-ruUaJukKet4oEvq8UxJq2t9X5rovs5vy75d3k6RyPTx-368sInRRjnOMuWyccI3AqJkh6xPhwlMsEOzo2xYR_aymnhj5-EsVncH0ifSQLzvPuZTiFJOzc1Pg-sT7WZ-ASmx9T4s6EGMHebTqJFbssqdoBEwqQateTImGVfMA0gKSyT1W5Zg2k4v-gbA2H_rnglqt6tmnsh6xJvBr06bH14wYVqf9')"></div>
+<div class="relative z-10">
+<span class="font-label-mono text-label-mono text-primary mb-1 block">Product</span>
+<h3 class="font-headline-sm text-[18px] text-white leading-tight">Morphis <br/></h3>
+</div>
+</a>
+<!-- Kinetic Botany -->
+<a href="comp4_mobile.html" class="col-span-2 row-span-1 border border-outline-variant p-4 flex flex-col justify-between relative bg-surface-container-low rim-light-top">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Bioluminescent mechanical flowers that slowly move, glowing with a soft gold light. The setting is a futuristic garden at night, where nature and technology are seamlessly integrated. Rim lighting defines the edges of the metallic petals against the dark background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAmhnP7x7MvraGeEvW7KG_hcTI01WQ21IK4GcEWaajyVv1kH3zOCnu2l0X4r7UpBA_-w3chQcXsP-oKkqs7cSfCpHrLaPO5D1upi1og-bjg9wivC7l1tC0fVQ98Gtax4alK22XM5HORw-XP_rPxyGJ_c7xDqln3Clpo-xKxBkj22jznKZDVqaSpXOqHkejvrc5NT0j4E1zjmzvoySAWpPjWcY8wBCJZUNYf-Mn6QFfzBAxxUXqualpnMsFsPVJIkAl9bkX5dVO0zhl3')"></div>
+<div class="relative z-10 flex justify-between items-start w-full">
+<span class="font-label-mono text-label-mono text-primary">Environment</span>
+<span class="material-symbols-outlined text-primary" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+</div>
+<h3 class="relative z-10 font-headline-sm text-[20px] text-white">Envirospark</h3>
+</a>
+</div>
+</section>
+<!-- Newsletter / Archive -->
+<section class="snap-section px-margin-mobile flex flex-col justify-center items-center text-center" id="newsletter">
+<div class="w-20 h-20 border border-primary/20 flex items-center justify-center mb-8 rim-light-top">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="inventory_2">inventory_2</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary tracking-[0.3em] mb-4">THE COMPENDIUM</span>
+<h2 class="font-headline-lg-mobile text-white mb-6">Receive the <br/>2026 Archive</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-12 max-w-xs">
+                A curated digital collection of this year's most visionary submissions.
+            </p>
+<div class="w-full space-y-4">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-center font-label-mono text-label-mono text-white placeholder:text-on-surface-variant/50 pb-4" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="w-full h-touch-target-min bg-white text-black font-label-caps text-label-caps tracking-widest active:scale-95 transition-all">
+                    JOIN ARCHIVE
+                </button>
+</div>
+<footer class="mt-16 pt-8 border-t border-outline-variant w-full opacity-30 text-[10px] font-label-mono tracking-tighter">
+                © 2026 CREATRICKS DESIGN EXPO. ALL RIGHTS RESERVED.
+            </footer>
+</section>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe px-margin-mobile bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-t border-outline-variant z-50 flat no shadows">
+<!-- Expo (Active) -->
+<a class="flex flex-col items-center justify-center text-primary hover:text-primary-fixed transition-all scale-110 duration-200" href="#">
+<span class="material-symbols-outlined text-[24px]" data-icon="explore">explore</span>
+<span class="font-label-caps text-label-caps mt-1">Expo</span>
+</a>
+<!-- Competitions -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all" href="#competitions">
+<span class="material-symbols-outlined text-[24px]" data-icon="emoji_events">emoji_events</span>
+<span class="font-label-caps text-label-caps mt-1">Competitions</span>
+</a>
+<!-- Schedule -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all" href="schedule_mobile.html">
+<span class="material-symbols-outlined text-[24px]" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-caps text-label-caps mt-1">Schedule</span>
+</a>
+<!-- Archives -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all" href="#newsletter">
+<span class="material-symbols-outlined text-[24px]" data-icon="inventory_2">inventory_2</span>
+<span class="font-label-caps text-label-caps mt-1">Archives</span>
+</a>
+</nav>
+<script>
+        // Micro-interaction for competition cards
+        document.querySelectorAll('#competitions > div > div').forEach(card => {
+            card.addEventListener('touchstart', () => {
+                card.style.borderColor = '#ffe9b0';
+            });
+            card.addEventListener('touchend', () => {
+                card.style.borderColor = '';
+            });
+        });
+
+        // Simple scroll spy for active tab
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('nav.fixed.bottom-0 a');
+        
+        const scrollContainer = document.querySelector('.snap-container');
+        scrollContainer.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollContainer.scrollTop >= sectionTop - 100) {
+                    current = section.getAttribute('id') || 'expo';
+                }
+            });
+
+            navItems.forEach(item => {
+                const href = item.getAttribute('href').substring(1);
+                const isMatch = (current === 'expo' && href === '') || (current === href);
+                
+                if (isMatch) {
+                    item.className = "flex flex-col items-center justify-center text-primary scale-110 duration-200 transition-all";
+                } else {
+                    item.className = "flex flex-col items-center justify-center text-on-surface-variant hover:text-primary-fixed transition-all";
+                }
+            });
+        });
+    </script>
+</body></html>

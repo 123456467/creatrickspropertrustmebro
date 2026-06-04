@@ -1,0 +1,8 @@
+Luminara-Red,Maroon
+Huenova-Blue(light),gray
+Envirospark-Green,blue
+Morphis-Yellow/orange(muted),Green
+Band-purple(neon), pink
+
+
+
